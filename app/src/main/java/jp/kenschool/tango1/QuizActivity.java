@@ -22,7 +22,7 @@ import static jp.kenschool.tango1.MyOpenHelper.TABLE_WORDS;
 
 public class QuizActivity extends AppCompatActivity {
 
-    ArrayList<Word> data = null;
+    List<Word> data = null;
     int type = 0;       //type(1=JPN,2=ENG)
     ManageDB mdb = null;
 

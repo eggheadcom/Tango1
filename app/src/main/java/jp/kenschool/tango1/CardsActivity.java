@@ -8,6 +8,8 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.helper.ItemTouchHelper;
 import android.view.View;
 import java.util.ArrayList;
+import java.util.List;
+
 import com.beardedhen.androidbootstrap.BootstrapButton;
 
 public class CardsActivity extends AppCompatActivity {
@@ -18,7 +20,7 @@ public class CardsActivity extends AppCompatActivity {
     BootstrapButton btnBack = null;
     BootstrapButton btnReset = null;
     ManageDB mdb = null;
-    ArrayList<Word> wordsList = null;  //単語リスト
+    List<Word> wordsList = null;  //単語リスト
     int langMode = 0;                  //言語タイプ
 
     @Override

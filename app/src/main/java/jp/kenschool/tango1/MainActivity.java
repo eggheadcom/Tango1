@@ -15,7 +15,7 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     // フィールド――――――――――――――――
-    public static final double VERSION = 2.7;
+    public static final double VERSION = 2.8;
     TextView tvLogin = null;
     ManageDB mdb = null;
 

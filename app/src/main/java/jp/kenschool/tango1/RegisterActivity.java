@@ -13,6 +13,7 @@ import android.widget.TextView;
 import com.beardedhen.androidbootstrap.BootstrapButton;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import static jp.kenschool.tango1.MyOpenHelper.*;
 
@@ -46,7 +47,7 @@ public class RegisterActivity extends AppCompatActivity {
         mdb = new ManageDB(this);
 
         //カテゴリ取得
-        ArrayList<String> categories = mdb.getCateList();
+        List<String> categories = mdb.getCateList();
 
         //カテゴリに合わせてラジオボタン生成
         for(int i = 0; i < categories.size(); i++){

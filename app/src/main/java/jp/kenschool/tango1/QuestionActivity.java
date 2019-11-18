@@ -14,6 +14,7 @@ import com.beardedhen.androidbootstrap.BootstrapProgressBarGroup;
 import static jp.kenschool.tango1.MyOpenHelper.*;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class QuestionActivity extends AppCompatActivity {
 
@@ -28,7 +29,7 @@ public class QuestionActivity extends AppCompatActivity {
 
     int btnMode = 0;
     ManageDB mdb = null;
-    ArrayList<Word> data = null;//単語リスト
+    List<Word> data = null;//単語リスト
     Word word = null;           //１単語
     int type = 0;               //言語タイプ
 

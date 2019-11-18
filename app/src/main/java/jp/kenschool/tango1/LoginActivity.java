@@ -12,6 +12,8 @@ import android.widget.EditText;
 import android.widget.TextView;
 import com.beardedhen.androidbootstrap.BootstrapButton;
 import java.util.ArrayList;
+import java.util.List;
+
 import static jp.kenschool.tango1.MyOpenHelper.*;
 
 public class LoginActivity extends AppCompatActivity {
@@ -86,7 +88,7 @@ public class LoginActivity extends AppCompatActivity {
                             " WHERE user_name = '" + inputName
                             +"' AND password = '" + inputPass + "'";
 
-                    ArrayList<String> result = mdb.read(sql, 1); //DBから結果受け取り
+                    List<String> result = mdb.read(sql, 1); //DBから結果受け取り
 
                     if(result.size() != 0) {
                         userId = result.get(0); //結果からIDをセット
@@ -131,7 +133,7 @@ public class LoginActivity extends AppCompatActivity {
                             " FROM " + TABLE_USERS +
                             " WHERE user_name = '" + inputName +"'";
 
-                    ArrayList<String> result = mdb.read(sql, 1); //DBから結果受け取り
+                    List<String> result = mdb.read(sql, 1); //DBから結果受け取り
 
                     if(result.size() != 0){           //結果がゼロではない＝既にある場合
                         errMsg.append("既に使用されているユーザー名です\n");
