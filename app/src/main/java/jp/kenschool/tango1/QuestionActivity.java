@@ -6,6 +6,7 @@ import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.TextView;
 import com.beardedhen.androidbootstrap.BootstrapButton;
 import com.beardedhen.androidbootstrap.BootstrapProgressBar;
@@ -18,20 +19,17 @@ import java.util.List;
 
 public class QuestionActivity extends AppCompatActivity {
 
+    TextView tvDebug = null;
     TextView tvQuestion = null;
     TextView tvCount = null;
-    TextView edAnswer = null;
-    TextView tvDebug = null;
+    EditText edAnswer = null;
     BootstrapButton btnCheck = null;
     BootstrapButton btnQuit = null;
     BootstrapProgressBar bar = null;
     BootstrapProgressBarGroup barGroup = null;
 
     int btnMode = 0;
-    ManageDB mdb = null;
-    List<Word> data = null;//単語リスト
-    Word word = null;           //１単語
-    int type = 0;               //言語タイプ
+    int type = 0;           //言語タイプ
 
     int allCount = 0;   //総問題数（変化しない）
     int now = 1;        //何問目か
@@ -40,6 +38,9 @@ public class QuestionActivity extends AppCompatActivity {
     int correct = 0;    //DBのcorrect (過去にこの問題を正解した回数)
     int prev = 0;       //DBのprevious（前回正解した 0:不正解 1:正解）
 
+    List<Word> data = null; //単語リスト
+    Word word = null;       //１単語
+    ManageDB mdb = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

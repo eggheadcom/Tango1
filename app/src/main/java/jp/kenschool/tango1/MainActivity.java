@@ -16,8 +16,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     // フィールド――――――――――――――――
     public static final double VERSION = 2.8;
-    TextView tvLogin = null;
-    ManageDB mdb = null;
+    private TextView tvLogin = null;
+    private ManageDB mdb = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

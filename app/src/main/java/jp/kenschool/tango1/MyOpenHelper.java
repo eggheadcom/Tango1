@@ -66,7 +66,7 @@ public class MyOpenHelper extends SQLiteOpenHelper {
      ――――――――――――――――――――――――――――――――――――――――――――――――*/
     // 呼び出し元のアクティビティを引数で受け、親のコンストラクタを呼び出す
     // 渡す引数２はDB名、引数３は基本的にはnullでOK、引数４はバージョン
-    MyOpenHelper(Context context){
+    public MyOpenHelper(Context context){
         super(context, DB_NAME, null, DB_VERSION);
     }
 

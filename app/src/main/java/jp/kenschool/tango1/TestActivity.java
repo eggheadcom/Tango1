@@ -19,22 +19,22 @@ import java.util.ArrayList;
 public class TestActivity extends AppCompatActivity implements MyConst {
 
     // フィールド――――――――――――――――
-    TextView tvError = null;
-    TextView tvDebug = null;
-    EditText edCnt = null;
-    EditText edRate = null;
-    EditText edDays = null;
-    CheckBox chPrevious = null;
-    BootstrapButton btnStartQuestion = null;
-    BootstrapButton btnBack = null;
-    BootstrapButton btnReset = null;
-    BootstrapButton btnStartQuiz = null;
-    RadioButton rbJpn = null;
-    RadioButton rbAllCnt = null;
-    RadioButton rbCnt = null;
-    RadioGroup rgpCate = null;
-    RadioGroup rgpLang = null;
-    RadioGroup rgpCtn = null;
+    private TextView tvDebug = null;
+    private TextView tvError = null;
+    private EditText edCnt = null;
+    private EditText edRate = null;
+    private EditText edDays = null;
+    private CheckBox chPrevious = null;
+    private BootstrapButton btnStartQuestion = null;
+    private BootstrapButton btnBack = null;
+    private BootstrapButton btnReset = null;
+    private BootstrapButton btnStartQuiz = null;
+    private RadioButton rbJpn = null;
+    private RadioButton rbAllCnt = null;
+    private RadioButton rbCnt = null;
+    private RadioGroup rgpCate = null;
+    private RadioGroup rgpLang = null;
+    private RadioGroup rgpCtn = null;
 
     ManageDB mdb = null;
 

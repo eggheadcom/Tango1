@@ -19,26 +19,26 @@ import static jp.kenschool.tango1.MyOpenHelper.*;
 public class LoginActivity extends AppCompatActivity {
 
     //***フィールド***
-    TextView tvErr;
-    EditText edName;
-    EditText edPass;
-    EditText edPassAgain;
-    BootstrapButton btnLogin;
-    BootstrapButton btnNewUser;
-    Button btnPassAgain;
-    Button btnCancel;
+    private TextView tvErr;
+    private EditText edName;
+    private EditText edPass;
+    private EditText edPassAgain;
+    private BootstrapButton btnLogin;
+    private BootstrapButton btnNewUser;
+    private Button btnPassAgain;
+    private Button btnCancel;
 
-    String inputName;
-    String inputPass;
-    String inputPassAgain;
-    String userName;
-    String userPass;
-    String userId;
+    private String inputName;
+    private String inputPass;
+    private String inputPassAgain;
+    private String userName;
+    private String userPass;
+    private String userId;
 
-    ManageDB mdb = null;
-    StringBuilder errMsg = null;
-    SharedPreferences pref = null;
-    SharedPreferences.Editor editor = null;
+    private ManageDB mdb = null;
+    private StringBuilder errMsg = null;
+    private SharedPreferences pref = null;
+    private SharedPreferences.Editor editor = null;
 
     boolean inputCheck;
     final int VIEW_NOMAL = 1;

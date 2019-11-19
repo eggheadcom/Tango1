@@ -8,7 +8,7 @@ import android.util.Log;
 import static jp.kenschool.tango1.MyOpenHelper.TABLE_CATEGORIES;
 import java.util.ArrayList;
 
-public class ManageDB implements MyConst{
+public class ManageDB {
 
     // フィールド――――――――――――――――
     private MyOpenHelper helper;
@@ -16,13 +16,15 @@ public class ManageDB implements MyConst{
 
     //可読性をあげるため各項目を定数に
     private final int WORD_ID = 0;
-    private int CNT = 3;
-    private int CORRECT = 4;
-    private int LAST_ANS = 5;
-    private int RATE = 6;
-    private int CREATED_BY = 7;
-    private int CATE_ID = 8;
-    private int USER_ID = 9;
+    private final int JPN = 1;
+    private final int ENG = 2;
+    private final int CNT = 3;
+    private final int CORRECT = 4;
+    private final int LAST_ANS = 5;
+    private final int RATE = 6;
+    private final int CREATED_BY = 7;
+    private final int CATE_ID = 8;
+    private final int USER_ID = 9;
 
     /*――――――――――――――――――――――――――――――――――――――――――――――――
        コンストラクタ
@@ -48,7 +50,7 @@ public class ManageDB implements MyConst{
                 //Word型の各フィールドにセットしていく
                 Word record = new Word();
                 record.setWordID(c.getInt(WORD_ID));
-                record.setJpn(c.getString(MyConst.JPN));
+                record.setJpn(c.getString(JPN));
                 record.setEng(c.getString(ENG));
                 record.setCnt(c.getInt(CNT));
                 record.setCorrect(c.getInt(CORRECT));
